@@ -57,7 +57,7 @@ const GridContainer = styled.div.withConfig({
     ${({ variant }) =>
       variant === VARIANT_GRID &&
       `
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
     `}
   }
 
@@ -65,7 +65,7 @@ const GridContainer = styled.div.withConfig({
     ${({ variant }) =>
       variant === VARIANT_GRID &&
       `
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     `}
   }
 
@@ -73,7 +73,7 @@ const GridContainer = styled.div.withConfig({
     ${({ variant }) =>
       variant === VARIANT_GRID &&
       `
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     `}
   }
 
@@ -81,7 +81,7 @@ const GridContainer = styled.div.withConfig({
     ${({ variant }) =>
       variant === VARIANT_GRID &&
       `
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, minmax(0, 1fr));
     `}
   }
 
@@ -89,7 +89,7 @@ const GridContainer = styled.div.withConfig({
     ${({ variant }) =>
       variant === VARIANT_GRID &&
       `
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(5, minmax(0, 1fr));
     `}
   }
 `;

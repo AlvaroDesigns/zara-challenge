@@ -14,6 +14,7 @@ const StyledCard = styled.article`
   position: relative;
   display: flex;
   width: 100%;
+  min-width: 0;
   min-height: 344px;
   flex-direction: column;
   justify-content: space-between;
@@ -68,8 +69,10 @@ const Brand = styled.p`
 const ImageWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
+  width: 100%;
+  max-width: 312px;
   height: calc(100% - 50px);
   position: relative;
   z-index: 3;
@@ -92,7 +95,7 @@ const ProductCard = ({ brand, name, price, image, onClick }: ProductCardProps) =
       aria-label={`${name} by ${brand}, ${price} ${LITERALS.CURRENCY}`}
     >
       <ImageWrapper>
-        <Image src={image} width="312px" height="100%" objectFit="contain" alt={name} />
+        <Image src={image} width="100%" height="100%" objectFit="contain" alt={name} />
       </ImageWrapper>
       <Info>
         <Text>
