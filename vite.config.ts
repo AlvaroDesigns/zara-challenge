@@ -19,7 +19,7 @@ export default defineConfig(({ mode }) => {
       setupFiles: './src/test/setup.ts',
       coverage: {
         provider: 'v8',
-        reporter: ['text', 'html', 'json', 'lcov'],
+        reporter: ['text', 'html', 'lcov'],
       },
       outputFile: {
         junit: './junit.xml',

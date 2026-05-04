@@ -18,7 +18,7 @@ interface ProductCardListProps {
   label?: string;
   phones: Phone[];
   variant: Variant;
-  onClick: (id: string, brand: string, name: string) => void;
+  onClick: (id: string, name: string) => void;
 }
 
 const GridContainer = styled.div.withConfig({
@@ -115,7 +115,7 @@ const ProductCardList = ({
             image={phone.imageUrl}
             brand={phone.brand}
             price={phone.basePrice}
-            onClick={() => onClick(phone.id, phone.brand, phone.name)}
+            onClick={() => onClick(phone.id, phone.name)}
           />
         ))}
       </GridContainer>

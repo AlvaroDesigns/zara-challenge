@@ -230,9 +230,9 @@ export const Details = () => {
       <SectionSimilar>
         <ProductCardList
           label={LITERALS.TITLE_SIMILAR_ITEMS}
-          phones={product?.similarProducts}
+          phones={product?.similarProducts ?? []}
           variant="list"
-          onClick={(id, _brand, name) => {
+          onClick={(id, name) => {
             navigate(
               `/${URL_FRIENDLY.DETAILS}/${id}/${name
                 .replace(/\s+/g, '_')
