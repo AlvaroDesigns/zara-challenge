@@ -1,0 +1,63 @@
+{
+  "name": "zara-challenge",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "----DEVELOPMENT----": "-------------",
+    "dev": "vite",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "----BUILD----": "-------------",
+    "predeploy": "npm run build",
+    "build": "vite build",
+    "deploy": "gh-pages -d dist",
+    "----TEST----": "-------------",
+    "test": "vitest",
+    "test-ui": "vitest --ui",
+    "test-coverage": "vitest --coverage"
+  },
+  "dependencies": {
+    "axios": "^1.16.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.14.2",
+    "styled-components": "^6.4.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.27.0",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/react": "^18.3.23",
+    "@types/react-dom": "^18.3.7",
+    "@types/styled-components": "^5.1.36",
+    "@typescript-eslint/eslint-plugin": "^8.59.1",
+    "@typescript-eslint/parser": "^8.59.1",
+    "@vitejs/plugin-react-swc": "^3.10.0",
+    "@vitest/coverage-v8": "^3.2.1",
+    "@vitest/ui": "^3.2.1",
+    "eslint": "^9.27.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-import-resolver-typescript": "^3.10.1",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "gh-pages": "^6.3.0",
+    "globals": "^15.15.0",
+    "jsdom": "^26.1.0",
+    "prettier": "^3.8.3",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.59.1",
+    "vite": "^6.3.5",
+    "vitest": "^3.2.1",
+    "vitest-sonar-reporter": "^2.0.0"
+  },
+  "prettier": {
+    "semi": true,
+    "trailingComma": "all",
+    "singleQuote": true,
+    "printWidth": 90,
+    "tabWidth": 2,
+    "endOfLine": "auto"
+  }
+}
